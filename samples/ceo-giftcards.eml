@@ -1,0 +1,12 @@
+Received: from mail-ed1-f41.google.com (mail-ed1-f41.google.com [209.85.208.41]) by mx.example.test; Wed, 11 Nov 2026 10:20:00 +0100
+Authentication-Results: mx.example.test; spf=pass smtp.mailfrom=gmail.com; dkim=pass header.d=gmail.com; dmarc=pass header.from=gmail.com
+From: "Marta Ruiz (CEO)" <marta.ruiz.ceo@gmail.com>
+Reply-To: marta.ruiz.ceo@gmail.com
+To: finanzas@example.test
+Subject: Quick favor
+Date: Wed, 11 Nov 2026 10:19:40 +0100
+Message-ID: <CAB123@mail.gmail.com>
+Content-Type: text/plain; charset=utf-8
+
+Hi, I am in a meeting and cannot call. I need you to buy 5 gift cards of 100 EUR for a client today.
+Please keep this between us and send me the codes by reply. I will reimburse you later.

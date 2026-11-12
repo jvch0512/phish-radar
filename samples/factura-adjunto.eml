@@ -1,0 +1,21 @@
+Received: from smtp.facturas-online.click ([203.0.113.77]) by mx.example.test; Mon, 09 Nov 2026 17:02:11 +0100
+Authentication-Results: mx.example.test; spf=softfail smtp.mailfrom=envios@facturas-online.click; dkim=none; dmarc=none
+From: Correos Envios <envios@facturas-online.click>
+To: contabilidad@example.test
+Subject: Factura pendiente - ultimo aviso
+Date: Mon, 09 Nov 2026 17:02:05 +0100
+Message-ID: <77aa@facturas-online.click>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="m1"
+
+--m1
+Content-Type: text/plain; charset=utf-8
+
+Estimado cliente, tiene una factura pendiente. Descargue el adjunto inmediatamente o su cuenta sera bloqueada.
+--m1
+Content-Type: application/octet-stream; name="Factura_2026.pdf.exe"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Factura_2026.pdf.exe"
+
+TVqQAAMAAAAEAAAA//8AALgAAAAAAAAA
+--m1--

@@ -1,0 +1,21 @@
+Received: from out.github.com (out-1.github.com [192.30.252.200]) by mx.example.test; Tue, 10 Nov 2026 09:00:00 +0100
+Received: from internal.github.com by out.github.com; Tue, 10 Nov 2026 09:00:00 +0100
+Authentication-Results: mx.example.test; spf=pass smtp.mailfrom=github.com; dkim=pass header.d=github.com; dmarc=pass (p=reject) header.from=github.com
+Return-Path: <noreply@github.com>
+From: GitHub <noreply@github.com>
+To: dev@example.test
+Subject: [GitHub] A new SSH key was added to your account
+Date: Tue, 10 Nov 2026 09:00:00 +0100
+Message-ID: <rep-1234@github.com>
+Content-Type: multipart/alternative; boundary="g1"
+
+--g1
+Content-Type: text/plain; charset=utf-8
+
+Hey dev, a new SSH key was added to your account. If you did this, no action is needed.
+Review your keys: https://github.com/settings/keys
+--g1
+Content-Type: text/html; charset=utf-8
+
+<p>Hey dev, a new SSH key was added.</p><p><a href="https://github.com/settings/keys">https://github.com/settings/keys</a></p>
+--g1--

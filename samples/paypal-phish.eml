@@ -1,0 +1,25 @@
+Received: from mail.pay-pa1-secure.top (unknown [185.220.101.45]) by mx.example.test with ESMTP; Tue, 10 Nov 2026 08:14:02 +0100
+Authentication-Results: mx.example.test; spf=fail smtp.mailfrom=billing@pay-pa1-secure.top; dkim=none; dmarc=fail (p=reject) header.from=paypal.com
+Return-Path: <billing@pay-pa1-secure.top>
+From: "PayPal Security" <service@paypa1-support.com>
+Reply-To: resolution@mail-helpdesk.xyz
+To: victim@example.test
+Subject: =?UTF-8?B?W1VSR0VOVF0gWW91ciBhY2NvdW50IHdpbGwgYmUgc3VzcGVuZGVk?=
+Date: Tue, 10 Nov 2026 08:13:55 +0100
+Message-ID: <a1b2c3@pay-pa1-secure.top>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="b1"
+
+--b1
+Content-Type: text/plain; charset=utf-8
+
+Dear customer, we detected unusual activity. Your account will be suspended within 24 hours.
+Verify your account now: http://paypal.com.secure-login.pay-pa1-secure.top/verify
+Thank you, PayPal Security
+--b1
+Content-Type: text/html; charset=utf-8
+
+<html><body><p>Dear customer,</p><p>We detected unusual activity. Your account will be suspended within 24 hours.</p>
+<p><a href="http://paypal.com.secure-login.pay-pa1-secure.top/verify">https://www.paypal.com/myaccount/verify</a></p>
+<img src="http://t.pay-pa1-secure.top/p.gif" width="1" height="1"></body></html>
+--b1--
