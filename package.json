@@ -1,0 +1,18 @@
+{
+  "name": "phish-radar",
+  "version": "0.1.0",
+  "description": "Phishing email analyzer: parses .eml files, checks SPF/DKIM/DMARC and alignment, URLs, attachments and headers, scores explainably, and adds an optional Claude review that can only raise the verdict. Zero runtime dependencies.",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "phish-radar": "dist/src/cli.js" },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/src/server-main.js",
+    "test": "tsc && node --test dist/test/eml.test.js dist/test/analyze.test.js dist/test/ai.test.js dist/test/server.test.js",
+    "lint": "tsc --noEmit"
+  },
+  "repository": "github:jvch0512/phish-radar",
+  "keywords": ["phishing", "email-security", "dmarc", "spf", "dkim", "typescript", "soc", "llm"],
+  "devDependencies": { "@types/node": "^22.0.0", "typescript": "^5.6.0" },
+  "engines": { "node": ">=20" }
+}
