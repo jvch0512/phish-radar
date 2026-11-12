@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phish Radar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><span class="dot"></span>Phish Radar <small>email threat analyzer</small></div>
+  <div id="ai-status" class="chip">AI: checking</div>
+</header>
+<main>
+  <section id="drop" class="drop" tabindex="0">
+    <p><strong>Drop a .eml file here</strong> or <label class="link">browse<input id="file" type="file" accept=".eml,message/rfc822" hidden></label></p>
+    <p class="muted">Analysis runs on this machine. Samples:</p>
+    <div id="samples" class="samples"></div>
+    <label class="muted"><input id="useai" type="checkbox" checked> Ask Claude for a second opinion</label>
+  </section>
+  <section id="result" hidden>
+    <div class="top">
+      <div class="gauge-wrap"><svg id="gauge" viewBox="0 0 120 120" width="160" height="160" role="img" aria-label="risk score"></svg></div>
+      <div class="meta">
+        <div id="verdict" class="verdict"></div>
+        <div id="from" class="line"></div>
+        <div id="subject" class="line strong"></div>
+        <div id="auth" class="auth"></div>
+      </div>
+    </div>
+    <div class="cols">
+      <div class="card"><h2>Findings <span id="fcount"></span></h2><ul id="findings" class="findings"></ul></div>
+      <div class="side">
+        <div class="card" id="aicard"><h2>Second opinion</h2><div id="ai"></div></div>
+        <div class="card"><h2>Links</h2><div id="urls"></div></div>
+        <div class="card"><h2>Attachments</h2><div id="atts"></div></div>
+      </div>
+    </div>
+  </section>
+  <p id="error" class="error" hidden></p>
+</main>
+<script src="app.js" type="module"></script>
+</body>
+</html>
